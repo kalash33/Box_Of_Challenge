@@ -9,7 +9,6 @@ app.use(cookieParser());
 
 //set a simple for homepage route
 app.get('/', (req, res) => {
-    // res.send('welcome to a simple HTTP cookie server');
     res.cookie('flag', 'EHMhWYWF1RXBvgxYxpov3H7fKzniP31M6TdsdGSct').sendFile(__dirname + "/static/index.html"); //Sets name = express
 
 });
